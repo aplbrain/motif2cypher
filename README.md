@@ -8,6 +8,10 @@ A command-line executable to convert [DotMotif](https://github.com/aplbrain/dotm
 python3 motif2cypher.py < tri.motif
 ```
 
+```shell
+python3 motif2cypher.py -f tri.motif -o tri.cypher --neuprint
+```
+
 ## Arguments
 
 | Argument        | Description                                                                                          |
@@ -15,3 +19,4 @@ python3 motif2cypher.py < tri.motif
 | `-f`,`--file`   | The input (`*.motif`) file to read from. If this is not specified, the program will read from stdin. |
 | `-o`,`--output` | The output file to write to. If this is not specified, the program will write to stdout.             |
 | `--neuprint`    | If this is specified, the program will write the output using the neuPrint data schema.              |
+
